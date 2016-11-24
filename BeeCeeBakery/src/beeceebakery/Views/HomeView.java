@@ -5,6 +5,9 @@
  */
 package beeceebakery.Views;
 
+import javax.swing.JButton;
+import javax.swing.JMenu;
+
 /**
  *
  * @author Anne Gitau
@@ -27,17 +30,107 @@ public class HomeView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
+        jMenu1 = new javax.swing.JMenu();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        viewAllBtn = new javax.swing.JButton();
+        transactBtn = new javax.swing.JButton();
+        exitBtn = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+        viewAllMn = new javax.swing.JMenu();
+        transactMn = new javax.swing.JMenu();
+        exitMn = new javax.swing.JMenu();
+
+        jLabel3.setText("jLabel3");
+
+        jMenu1.setText("jMenu1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 204, 255));
+
+        jLabel1.setFont(new java.awt.Font("Brigadoom BRK", 1, 36)); // NOI18N
+        jLabel1.setText("Bee Cee Bakery");
+
+        jLabel2.setFont(new java.awt.Font("Serif", 0, 24)); // NOI18N
+        jLabel2.setText("Home Page");
+
+        viewAllBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        viewAllBtn.setText("VIEW ALL CAKES");
+
+        transactBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        transactBtn.setText("TRANSACT");
+
+        exitBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        exitBtn.setText("EXIT");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(viewAllBtn)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(234, 234, 234)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(transactBtn)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addGap(24, 24, 24)
+                                    .addComponent(exitBtn)))
+                            .addGap(23, 23, 23)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel2)))
+                .addContainerGap(210, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(196, 196, 196))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(viewAllBtn)
+                .addGap(31, 31, 31)
+                .addComponent(transactBtn)
+                .addGap(29, 29, 29)
+                .addComponent(exitBtn)
+                .addContainerGap(66, Short.MAX_VALUE))
+        );
+
+        jMenu2.setText("File");
+
+        viewAllMn.setText("view all");
+        jMenu2.add(viewAllMn);
+
+        transactMn.setText("transact");
+        jMenu2.add(transactMn);
+
+        jMenuBar1.add(jMenu2);
+
+        exitMn.setText("Exit");
+        jMenuBar1.add(exitMn);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -79,5 +172,37 @@ public class HomeView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton exitBtn;
+    private javax.swing.JMenu exitMn;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton transactBtn;
+    private javax.swing.JMenu transactMn;
+    private javax.swing.JButton viewAllBtn;
+    private javax.swing.JMenu viewAllMn;
     // End of variables declaration//GEN-END:variables
+public JButton getExitBtn(){
+    return exitBtn;
+}
+public JMenu getExitMn(){
+    return exitMn;
+}
+public JButton getTransactBtn(){
+    return transactBtn;
+}
+public JMenu getTransactMn(){
+    return transactMn;
+}
+public JButton getViewAllBtn(){
+    return viewAllBtn;
+}
+public JMenu getViewAllMn(){
+    return viewAllMn;
+}
+
 }
