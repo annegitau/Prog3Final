@@ -9,6 +9,6 @@ package beeceebakery.Models;
  *
  * @author Anne Gitau
  */
-public class Database {
+public class LoginDB {
     
 }

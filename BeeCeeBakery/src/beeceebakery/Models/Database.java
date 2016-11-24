@@ -17,9 +17,9 @@ import java.util.ArrayList;
  * @author Anne Gitau
  */
 public class Database {
-    private static final Models.Database databaseInstance = new Models.Database();
+    private static final Database databaseInstance = new Database();
     
-    public static Models.Database getDatabaseInstance() {
+    public static Database getDatabaseInstance() {
         return databaseInstance;
     }
     
